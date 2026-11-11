@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Le nom « talanton » est déjà pris sur PyPI par un autre projet :
+# le paquet se distribue donc sous « talanton-valo », l'import reste `talanton`.
+name = "talanton-valo"
+version = "0.1.0"
+description = "D'un ticker à un modèle de valorisation M&A / LBO dans Excel, avec de vraies formules."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["openpyxl>=3.1", "requests>=2.31"]
+
+[project.optional-dependencies]
+marche = ["yfinance>=0.2.40"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+talanton = "talanton.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["talanton*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

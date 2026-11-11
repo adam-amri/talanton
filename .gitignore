@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# données téléchargées et classeurs produits en local
+donnees_cache/
+sorties/
+
+# fichiers temporaires d'Excel et de LibreOffice
+~$*.xlsx
+.~lock.*
