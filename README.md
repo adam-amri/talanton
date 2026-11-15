@@ -1,5 +1,5 @@
 # Talanton
-adaszadzadzadazdazdqsdzadazzqszdasdzaqsdaqdsqadxaqzdqazsdxzaxaqsd
+adaszadzadzadazdazdqsdzadazzqszdasdzaqsdaqdsqadzasqddxaqzdqazsdxzaxaqsd
 D'un ticker à un modèle de valorisation M&A / LBO dans Excel, avec de vraies formules.
 
 Talanton récupère les comptes publiés d'une société cotée, les met au format banque, projette ses trois états financiers, la valorise par DCF et par comparables, simule son rachat par un fonds (LBO), puis écrit le tout dans un classeur Excel où chaque chiffre est une formule : on change une hypothèse, tout se recalcule.
