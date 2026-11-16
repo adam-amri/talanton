@@ -1,0 +1,14 @@
+{
+ "cik": "0001672013",
+ "entityType": "operating",
+ "sic": "3949",
+ "sicDescription": "Sporting & Athletic Goods, NEC",
+ "name": "Acushnet Holdings Corp.",
+ "tickers": [
+  "GOLF"
+ ],
+ "exchanges": [
+  "NYSE"
+ ],
+ "fiscalYearEnd": "1231"
+}

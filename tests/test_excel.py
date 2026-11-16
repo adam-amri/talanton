@@ -1,7 +1,7 @@
-"""Classeur Excel : les formules doivent redonner exactement les chiffres du moteur Python.
+"""Excel workbook: the formulas must give back exactly the figures of the Python engine.
 
-Le rapprochement fait recalculer le classeur par LibreOffice. Sans LibreOffice
-sur la machine, ces tests sont ignorés (les autres continuent de tourner).
+The reconciliation has LibreOffice recalculate the workbook. Without LibreOffice
+on the machine these tests are skipped (the others still run).
 """
 
 from datetime import date
@@ -9,92 +9,132 @@ from datetime import date
 import pytest
 from openpyxl import load_workbook
 
-from talanton.controles import rapprocher, recalculer, trouver_libreoffice, verifier
-from talanton.excel import construire_classeur
-from talanton.moteur import calculer
+from talanton.checks import find_libreoffice, recalculate, reconcile, verify
+from talanton.engine import compute
+from talanton.excel import SHEETS, build_workbook
+from talanton.excel import styles as S
+from talanton.model import ModelConfig, Settings
 
-ONGLETS = ["Synthèse", "Hypothèses", "Historique", "Projections", "DCF", "Comparables", "LBO",
-           "Sensibilités", "Contrôles"]
-sans_libreoffice = pytest.mark.skipif(trouver_libreoffice() is None, reason="LibreOffice absent")
-
-
-def _ecrire(res, dossier):
-    wb, registre = construire_classeur(res, date(2026, 11, 10))
-    fichier = dossier / "modele.xlsx"
-    wb.save(fichier)
-    return fichier, registre
+needs_libreoffice = pytest.mark.skipif(find_libreoffice() is None, reason="LibreOffice not installed")
 
 
-def test_structure_du_classeur(resultat, tmp_path):
-    fichier, registre = _ecrire(resultat, tmp_path)
-    wb = load_workbook(fichier)
-    assert wb.sheetnames == ONGLETS
-    formules = [c.value for ws in wb for ligne in ws.iter_rows() for c in ligne
+def _write(res, folder):
+    wb, registry = build_workbook(res, date(2026, 11, 16))
+    file = folder / "model.xlsx"
+    wb.save(file)
+    return file, registry
+
+
+def _check(res, folder):
+    file, registry = _write(res, folder)
+    assert recalculate(file)
+    rec = reconcile(file, registry, res.checkpoints())
+    assert rec.gaps == {} and rec.formula_errors == [] and rec.empty_cells == []
+    return file, rec
+
+
+def test_workbook_structure(result, tmp_path):
+    file, registry = _write(result, tmp_path)
+    wb = load_workbook(file)
+    assert wb.sheetnames == list(SHEETS)
+    formulas = [c.value for ws in wb for row in ws.iter_rows() for c in row
                 if isinstance(c.value, str) and c.value.startswith("=")]
-    assert len(formules) > 800
-    assert not [f for f in formules if "#REF" in f]
-    assert set(resultat.points_de_controle()) <= set(registre)
+    assert len(formulas) > 800
+    assert not [f for f in formulas if "#REF" in f]
+    assert set(result.checkpoints()) <= set(registry)
 
 
-def test_les_projections_ne_contiennent_aucun_chiffre_en_dur(resultat, tmp_path):
-    fichier, _ = _ecrire(resultat, tmp_path)
-    for onglet in ("Projections", "DCF", "LBO", "Sensibilités"):
-        for ligne in load_workbook(fichier)[onglet].iter_rows(min_row=5):
-            for c in ligne[1:]:
+def test_no_hard_coded_figure_in_the_computation_sheets(result, tmp_path):
+    file, _ = _write(result, tmp_path)
+    for sheet in ("Projections", "DCF", "LBO", "Sensitivities"):
+        for row in load_workbook(file)[sheet].iter_rows(min_row=5):
+            for c in row[1:]:
                 if isinstance(c.value, (int, float)) and not isinstance(c.value, bool):
-                    # seule exception : les années de sortie de la table de sensibilité (3, 4, 5)
-                    assert onglet == "Sensibilités" and c.value in (3, 4, 5), f"{onglet}!{c.coordinate}"
+                    # only exception: the exit years of the sensitivity table
+                    assert sheet == "Sensitivities" and c.value in result.sens.exit_years, f"{sheet}!{c.coordinate}"
 
 
-def test_verifications_python(resultat):
-    niveaux = [niveau for niveau, _ in verifier(resultat)]
-    assert "ERREUR" not in niveaux
+def test_python_verifications(result):
+    assert "ERROR" not in [level for level, _ in verify(result)]
 
 
-@sans_libreoffice
-def test_excel_egale_python_cas_de_base(resultat, tmp_path):
-    fichier, registre = _ecrire(resultat, tmp_path)
-    assert recalculer(fichier)
-    rap = rapprocher(fichier, registre, resultat.points_de_controle())
-    assert rap.ecarts == {} and rap.erreurs_formules == [] and rap.cellules_vides == []
-    assert rap.statut.startswith("Cohérent")
+def test_themes(result, inputs, tmp_path):
+    assert S.make_theme("midnight", {"ink": "#0b3d2e"}).ink == "0B3D2E"
+    for bad in (("neon", {}), ("classic", {"ink": "blue"}), ("classic", {"paper": "FFFFFF"})):
+        with pytest.raises(ValueError):
+            S.make_theme(*bad)
+    res = compute(inputs, ModelConfig(settings=Settings(theme="forest", theme_overrides={"accent": "AA0000"})))
+    file, _ = _write(res, tmp_path)
+    wb = load_workbook(file)
+    assert wb["DCF"].sheet_properties.tabColor.rgb.endswith("AA0000")
+    assert wb["Summary"]["A1"].font.color.rgb.endswith("14532D") and wb["Summary"]["A1"].font.name == "Calibri"
+    S.use(S.THEMES["classic"])
 
 
-@sans_libreoffice
-def test_excel_egale_python_hypotheses_modifiees(donnees, tmp_path):
-    """Même rapprochement après avoir bousculé les hypothèses : les formules suivent."""
-    surcharges = tmp_path / "hyp.toml"
-    surcharges.write_text(
-        "croissance = [0.06, 0.05, 0.04, 0.03, 0.03, 0.025]\n"
-        "marge_ebitda = [0.12, 0.125, 0.13, 0.135, 0.14, 0.145]\n"
-        "distributions = [308.408, 200, 200, 200, 200, 200]\n"
-        "dilution = 6.5\nautres_ajustements = 120\ntaux_is = 0.27\nmi_annee = 0\n"
-        "date_valo = 2026-11-09\ncroissance_perpetuelle = 0.025\nmultiple_sortie_dcf = 10.0\n"
-        "prime_acquisition = 0.4\nlevier = 4.0\ntaux_lbo = 0.095\namort_pct = 0.05\nsweep_pct = 0.5\n"
-        "ecart_multiple_sortie = -1.0\ntri_cible = 0.18\nfrais_transaction = 0.03\n"
-        "pas_wacc = 0.0025\npas_multiple = 0.5\npoids_blume = 1.0\nprime_specifique = 0.01\n")
-    res = calculer(*donnees, fichier_hypotheses=surcharges)
-    assert res.lbo.treso_fin[-1] > res.hyp.treso_min          # sweep partiel : la trésorerie s'accumule
-    fichier, registre = _ecrire(res, tmp_path)
-    assert recalculer(fichier)
-    rap = rapprocher(fichier, registre, res.points_de_controle())
-    assert rap.ecarts == {} and rap.erreurs_formules == [] and rap.cellules_vides == []
+@needs_libreoffice
+def test_excel_equals_python_base_case(result, tmp_path):
+    _, rec = _check(result, tmp_path)
+    assert rec.status.startswith("Consistent") and rec.n_formulas > 900
 
 
-@sans_libreoffice
-def test_tables_de_sensibilite_et_synthese(resultat, tmp_path):
-    fichier, _ = _ecrire(resultat, tmp_path)
-    recalculer(fichier)
-    wb = load_workbook(fichier, data_only=True)
-    se, sy = wb["Sensibilités"], wb["Synthèse"]
-    tables = ((5, resultat.sensi.dcf_gordon), (13, resultat.sensi.dcf_multiple),
-              (21, resultat.sensi.lbo_sortie), (29, resultat.sensi.lbo_prime))
-    for tete, attendu in tables:
-        for i, ligne in enumerate(attendu):
-            for j, valeur in enumerate(ligne):
-                assert se.cell(row=tete + 1 + i, column=3 + j).value == pytest.approx(valeur, rel=1e-9)
-    lignes = {sy.cell(row=r, column=1).value: (sy.cell(row=r, column=2).value, sy.cell(row=r, column=3).value)
-              for r in range(1, 40)}
-    for libelle, bas, haut in resultat.football:
-        trouve = next(v for k, v in lignes.items() if k and (k == libelle or k.startswith(libelle + " (")))
-        assert trouve == pytest.approx((bas, haut), rel=1e-9)
+@needs_libreoffice
+def test_excel_equals_python_after_changing_the_assumptions(inputs, tmp_path):
+    """Same reconciliation after shaking the assumptions: the formulas follow."""
+    overrides = {
+        "revenue_growth": [0.06, 0.05, 0.04, 0.03, 0.03, 0.025], "ebitda_margin": [0.12, 0.125, 0.13, 0.135, 0.14, 0.145],
+        "distributions": [308.408, 200, 200, 200, 200, 200], "other_dilution": 6.5, "rsus": 3.0, "option_strike": 12.0,
+        "other_adjustments": 120, "tax_rate": 0.27, "mid_year": 0, "valuation_date": date(2026, 11, 9),
+        "terminal_growth": 0.025, "exit_multiple": 10.0, "acquisition_premium": 0.4, "senior_leverage": 3.5,
+        "senior_rate": 0.095, "senior_amortization": 0.05, "cash_sweep": 0.5, "sub_leverage": 1.5, "sub_rate": 0.11,
+        "sub_pik_rate": 0.03, "exit_multiple_delta": -1.0, "target_irr": 0.18, "transaction_fees": 0.03,
+        "wacc_step": 0.0025, "multiple_step": 0.5, "blume_weight": 0.8, "specific_premium": 0.01}
+    res = compute(inputs, overrides=overrides)
+    assert res.lbo.cash_end[-1] > res.a.min_cash and res.a.option_shares(res.a.price) > 0
+    _check(res, tmp_path)
+
+
+@needs_libreoffice
+def test_excel_equals_python_with_eight_projected_years(inputs, tmp_path):
+    res = compute(inputs, ModelConfig(settings=Settings(years=8)), overrides={"sub_leverage": 1.0})
+    file, _ = _check(res, tmp_path)
+    assert load_workbook(file)["Projections"]["J4"].value == "2033E"
+
+
+@needs_libreoffice
+def test_maximum_price_when_options_are_in_the_money(inputs, tmp_path):
+    """Second branch of the maximum-price formula: the price exceeds the option strike."""
+    res = compute(inputs, overrides={"option_strike": 5.0, "options": 20.0})
+    assert res.lbo.max_price[res.a.target_irr] > 5.0
+    _check(res, tmp_path)
+
+
+@needs_libreoffice
+def test_sensitivity_tables_and_summary(result, tmp_path):
+    file, _ = _write(result, tmp_path)
+    recalculate(file)
+    wb = load_workbook(file, data_only=True)
+    se, sm = wb["Sensitivities"], wb["Summary"]
+    tables = ((5, result.sens.dcf_gordon), (13, result.sens.dcf_multiple),
+              (21, result.sens.lbo_exit), (29, result.sens.lbo_premium))
+    for top, expected in tables:
+        for i, row in enumerate(expected):
+            for j, value in enumerate(row[:3] if top == 21 else row):
+                assert se.cell(row=top + 1 + i, column=3 + j).value == pytest.approx(value, rel=1e-9)
+    rows = {sm.cell(row=r, column=1).value: (sm.cell(row=r, column=2).value, sm.cell(row=r, column=3).value)
+            for r in range(1, 40)}
+    for label, low, high in result.football:
+        found = next(v for k, v in rows.items() if k and (k == label or k.startswith(label + " (")))
+        assert found == pytest.approx((low, high), rel=1e-9)
+
+
+@needs_libreoffice
+def test_bloomberg_formulas_fall_back_on_the_recorded_price(inputs, tmp_path):
+    """Without a Terminal the live formulas must show the price of the generation date."""
+    res = compute(inputs, ModelConfig(settings=Settings(bloomberg_formulas=True)))
+    file, registry = _write(res, tmp_path)
+    cell = load_workbook(file)["Assumptions"]["C6"].value
+    assert cell == '=IF(ISNUMBER(_xll.BDP("MAT US Equity","PX_LAST")),_xll.BDP("MAT US Equity","PX_LAST"),15.59)'
+    assert recalculate(file)
+    assert load_workbook(file, data_only=True)["Assumptions"]["C6"].value == 15.59
+    rec = reconcile(file, registry, res.checkpoints())
+    assert rec.gaps == {} and rec.formula_errors == []

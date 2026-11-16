@@ -1,0 +1,14 @@
+{
+ "cik": "0001704711",
+ "entityType": "operating",
+ "sic": "3944",
+ "sicDescription": "Games, Toys & Children's Vehicles (No Dolls & Bicycles)",
+ "name": "Funko, Inc.",
+ "tickers": [
+  "FNKO"
+ ],
+ "exchanges": [
+  "Nasdaq"
+ ],
+ "fiscalYearEnd": "1231"
+}

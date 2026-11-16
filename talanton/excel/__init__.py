@@ -1,5 +1,5 @@
-"""Excel : écriture du classeur avec ses formules."""
+"""Excel: writing the workbook and its formulas."""
 
-from .classeur import construire_classeur
+from .workbook import SHEETS, build_workbook
 
-__all__ = ["construire_classeur"]
+__all__ = ["SHEETS", "build_workbook"]

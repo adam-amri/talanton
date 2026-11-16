@@ -1,0 +1,14 @@
+{
+ "cik": "0000046080",
+ "entityType": "operating",
+ "sic": "3944",
+ "sicDescription": "Games, Toys & Children's Vehicles (No Dolls & Bicycles)",
+ "name": "HASBRO, INC.",
+ "tickers": [
+  "HAS"
+ ],
+ "exchanges": [
+  "Nasdaq"
+ ],
+ "fiscalYearEnd": "1227"
+}

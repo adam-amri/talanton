@@ -1,38 +1,43 @@
-"""Jeu de données des tests : comptes réels enregistrés dans exemples/cache.
+"""Test data: real accounts and market data recorded in examples/cache.
 
-Les fichiers de exemples/cache/sec reprennent la structure exacte de l'API
-companyfacts de la SEC (extrait réduit aux balises utiles). Aucun test n'a
-besoin du réseau.
+The files of examples/cache/sec follow the exact structure of the SEC APIs
+(extracts reduced to the fields Talanton reads). No test needs the network.
 """
 
 from pathlib import Path
 
 import pytest
 
-from talanton.collecte import ClientEdgar, ClientMarche
-from talanton.moteur import calculer, collecter
+from talanton.data import EdgarClient, FredClient, MarketData
+from talanton.engine import collect, compute
 
-RACINE = Path(__file__).resolve().parents[1]
-CACHE = RACINE / "exemples" / "cache"
-AJUSTEMENTS = RACINE / "exemples" / "retraitements" / "MAT.toml"
-PAIRS = ["HAS", "FNKO", "JAKK", "YETI", "GOLF"]
-
-
-@pytest.fixture(scope="session")
-def edgar() -> ClientEdgar:
-    return ClientEdgar(CACHE, hors_ligne=True)
+ROOT = Path(__file__).resolve().parents[1]
+CACHE = ROOT / "examples" / "cache"
+ADJUSTMENTS = ROOT / "examples" / "adjustments" / "MAT.toml"
+CONFIG = ROOT / "examples" / "configs" / "MAT.toml"
+PEERS = ["HAS", "FNKO", "JAKK", "YETI", "GOLF"]
 
 
 @pytest.fixture(scope="session")
-def marche() -> ClientMarche:
-    return ClientMarche(CACHE, hors_ligne=True)
+def edgar() -> EdgarClient:
+    return EdgarClient(CACHE, offline=True)
 
 
 @pytest.fixture(scope="session")
-def donnees():
-    return collecter("MAT", PAIRS, CACHE, True, AJUSTEMENTS, journal=lambda *a: None)
+def market() -> MarketData:
+    return MarketData(CACHE, offline=True)
 
 
 @pytest.fixture(scope="session")
-def resultat(donnees):
-    return calculer(*donnees)
+def fred() -> FredClient:
+    return FredClient(CACHE, offline=True)
+
+
+@pytest.fixture(scope="session")
+def inputs():
+    return collect("MAT", PEERS, CACHE, True, ADJUSTMENTS, log=lambda *a: None)
+
+
+@pytest.fixture(scope="session")
+def result(inputs):
+    return compute(inputs)

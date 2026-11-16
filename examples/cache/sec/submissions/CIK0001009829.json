@@ -1,0 +1,14 @@
+{
+ "cik": "0001009829",
+ "entityType": "operating",
+ "sic": "3944",
+ "sicDescription": "Games, Toys & Children's Vehicles (No Dolls & Bicycles)",
+ "name": "JAKKS PACIFIC INC",
+ "tickers": [
+  "JAKK"
+ ],
+ "exchanges": [
+  "Nasdaq"
+ ],
+ "fiscalYearEnd": "1231"
+}

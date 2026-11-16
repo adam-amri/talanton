@@ -1,0 +1,44 @@
+{
+ "MAT": {
+  "date": "2026-11-09",
+  "price": 15.59,
+  "currency": "USD",
+  "source": "Yahoo Finance, close of 2026-11-09"
+ },
+ "HAS": {
+  "date": "2026-11-09",
+  "price": 120.92,
+  "currency": "USD",
+  "source": "Yahoo Finance, close of 2026-11-09"
+ },
+ "FNKO": {
+  "date": "2026-11-09",
+  "price": 7.125,
+  "currency": "USD",
+  "source": "Yahoo Finance, close of 2026-11-09"
+ },
+ "JAKK": {
+  "date": "2026-11-09",
+  "price": 35.56,
+  "currency": "USD",
+  "source": "Yahoo Finance, close of 2026-11-09"
+ },
+ "YETI": {
+  "date": "2026-11-09",
+  "price": 45.83,
+  "currency": "USD",
+  "source": "Yahoo Finance, close of 2026-11-09"
+ },
+ "GOLF": {
+  "date": "2026-11-09",
+  "price": 84.61,
+  "currency": "USD",
+  "source": "Yahoo Finance, close of 2026-11-09"
+ },
+ "^TNX": {
+  "date": "2026-11-09",
+  "price": 4.864,
+  "currency": "%",
+  "source": "Yahoo Finance (^TNX, 10-year Treasury yield), close of 2026-11-09"
+ }
+}

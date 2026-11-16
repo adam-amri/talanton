@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <!-- Extract of the EDGAR company list for this SIC code (2026-11-16), reduced to the fields Talanton reads. -->
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001089865</cik>
+          <name>MARVEL RESTAURANT VENTURE CORP</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001089865</id>
+      <title>MARVEL RESTAURANT VENTURE CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000063276</cik>
+          <name>MATTEL INC /DE/</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000063276</id>
+      <title>MATTEL INC /DE/</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001089861</cik>
+          <name>MEI HOLDING CO F CORP</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001089861</id>
+      <title>MEI HOLDING CO F CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001089902</cik>
+          <name>MEI HOLDING CO S CORP</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001089902</id>
+      <title>MEI HOLDING CO S CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000723209</cik>
+          <name>MIDDLETON DOLL CO</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000723209</id>
+      <title>MIDDLETON DOLL CO</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001089862</cik>
+          <name>MRV INC</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001089862</id>
+      <title>MRV INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000945276</cik>
+          <name>PLAY BY PLAY TOYS &amp; NOVELTIES INC</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000945276</id>
+      <title>PLAY BY PLAY TOYS &amp; NOVELTIES INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001143086</cik>
+          <name>PLUSHZONE INC</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001143086</id>
+      <title>PLUSHZONE INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001017616</cik>
+          <name>TONNER-ONE WORLD HOLDINGS, INC.</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001017616</id>
+      <title>TONNER-ONE WORLD HOLDINGS, INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000912960</cik>
+          <name>VERMONT TEDDY BEAR CO INC</name>
+          <sic>3942</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000912960</id>
+      <title>VERMONT TEDDY BEAR CO INC</title>
+    </entry>
+  </feed>

@@ -1,0 +1,32 @@
+# Analyst adjustments for Mattel (MAT). Amounts in millions of dollars.
+# This is where restatement decisions are made: edit, add or delete lines,
+# then run Talanton again.
+
+[capex]
+# Mattel presents its capital expenditure on two lines of the cash-flow statement:
+# "Purchases of tools, dies, and molds" and "Purchases of other property, plant,
+# and equipment". The first one carries a Mattel-specific tag that the SEC
+# companyfacts API does not return, so the API only gives part of the capex.
+# Total rebuilt from the published investing cash flows and cross-checked with
+# stockanalysis.com ("Capital Expenditures" line).
+source = "Mattel 10-K, cash-flow statement (two investing lines); cross-checked with stockanalysis.com"
+"2021-12-31" = 151.353
+"2022-12-31" = 186.503
+"2023-12-31" = 160.300
+"2024-12-31" = 202.620
+"2025-12-31" = 181.992
+
+[ebitda]
+# Q3 2026 operating income includes $88m of tariff refunds, which Mattel itself
+# excludes from its guidance. Non-recurring gain: removed from LTM EBITDA.
+source = "Q3 2026 earnings release (8-K of 5 November 2026): $88m of tariff refunds"
+"LTM" = -88.0
+
+[net_income]
+# Two non-recurring gains inflate LTM net income:
+#   - a $147.9m accounting gain on the purchase of the remaining 50% of Mattel163
+#     (assumption: gain not taxed);
+#   - the $88m of tariff refunds, i.e. $66m after tax at 25%.
+# This adjustment is only used for the P/E applied to Mattel on the Comps sheet.
+source = "Q3 2026 earnings release: Mattel163 gain ($147.9m) and tariff refunds ($88m, i.e. $66m after tax at 25%)"
+"LTM" = -213.9

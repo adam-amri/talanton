@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <!-- Extract of the EDGAR company list for this SIC code (2026-11-16), reduced to the fields Talanton reads. -->
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001672013</cik>
+          <name>Acushnet Holdings Corp.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001672013</id>
+      <title>Acushnet Holdings Corp.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001059763</cik>
+          <name>ADAMS GOLF INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001059763</id>
+      <title>ADAMS GOLF INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000854858</cik>
+          <name>AJAY SPORTS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000854858</id>
+      <title>AJAY SPORTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000902272</cik>
+          <name>ALDILA INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000902272</id>
+      <title>ALDILA INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001808997</cik>
+          <name>American Outdoor Brands, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001808997</id>
+      <title>American Outdoor Brands, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000797662</cik>
+          <name>American Rare Earths &amp; Materials, Corp.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000797662</id>
+      <title>American Rare Earths &amp; Materials, Corp.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000080397</cik>
+          <name>ARNOLD PALMER GOLF CO</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000080397</id>
+      <title>ARNOLD PALMER GOLF CO</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000884063</cik>
+          <name>BELL SPORTS CORP</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000884063</id>
+      <title>BELL SPORTS CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001078431</cik>
+          <name>BELL SPORTS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001078431</id>
+      <title>BELL SPORTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001012627</cik>
+          <name>BLACK ROCK GOLF CORP</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001012627</id>
+      <title>BLACK ROCK GOLF CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000912894</cik>
+          <name>BOLLINGER INDUSTRIES INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000912894</id>
+      <title>BOLLINGER INDUSTRIES INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001078207</cik>
+          <name>BOWFLEX INC.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001078207</id>
+      <title>BOWFLEX INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001082737</cik>
+          <name>BP INTERNATIONAL INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001082737</id>
+      <title>BP INTERNATIONAL INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001166708</cik>
+          <name>Brownie&apos;s Marine Group, Inc</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001166708</id>
+      <title>Brownie&apos;s Marine Group, Inc</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001825164</cik>
+          <name>BruMate, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001825164</id>
+      <title>BruMate, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000837465</cik>
+          <name>Callaway Golf Co</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000837465</id>
+      <title>Callaway Golf Co</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001095102</cik>
+          <name>CARBITE GOLF INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001095102</id>
+      <title>CARBITE GOLF INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001064539</cik>
+          <name>CKRUSH, INC.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001064539</id>
+      <title>CKRUSH, INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000913277</cik>
+          <name>Clarus Corp</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000913277</id>
+      <title>Clarus Corp</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000729576</cik>
+          <name>CML GROUP INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000729576</id>
+      <title>CML GROUP INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000914479</cik>
+          <name>COASTCAST CORP</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000914479</id>
+      <title>COASTCAST CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000060876</cik>
+          <name>CYBEX INTERNATIONAL INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000060876</id>
+      <title>CYBEX INTERNATIONAL INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000869293</cik>
+          <name>CYNTECH TECHNOLOGIES INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000869293</id>
+      <title>CYNTECH TECHNOLOGIES INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001033067</cik>
+          <name>EARTH &amp; OCEAN SPORTS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001033067</id>
+      <title>EARTH &amp; OCEAN SPORTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001322739</cik>
+          <name>EASTON-BELL SPORTS, INC.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001322739</id>
+      <title>EASTON-BELL SPORTS, INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000033488</cik>
+          <name>ESCALADE INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000033488</id>
+      <title>ESCALADE INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0002030602</cik>
+          <name>Femco Steel Technology Co., Ltd.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0002030602</id>
+      <title>Femco Steel Technology Co., Ltd.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000820242</cik>
+          <name>FIRST TEAM SPORTS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000820242</id>
+      <title>FIRST TEAM SPORTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001103121</cik>
+          <name>FOREFRONT HOLDINGS, INC.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001103121</id>
+      <title>FOREFRONT HOLDINGS, INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0002014254</cik>
+          <name>FST Corp.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0002014254</id>
+      <title>FST Corp.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001492622</cik>
+          <name>FUSION GOLF SHAFTS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001492622</id>
+      <title>FUSION GOLF SHAFTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000869802</cik>
+          <name>GARCIS USA INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000869802</id>
+      <title>GARCIS USA INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001060353</cik>
+          <name>GARY PLAYER GOLF INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001060353</id>
+      <title>GARY PLAYER GOLF INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001928581</cik>
+          <name>GMEX Robotics Corp</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001928581</id>
+      <title>GMEX Robotics Corp</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000879712</cik>
+          <name>GOLF TRAINING SYSTEMS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000879712</id>
+      <title>GOLF TRAINING SYSTEMS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001053210</cik>
+          <name>GOLFGEAR INTERNATIONAL INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001053210</id>
+      <title>GOLFGEAR INTERNATIONAL INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001031829</cik>
+          <name>GREEN MACHINE DEVELOPMENT CORP</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001031829</id>
+      <title>GREEN MACHINE DEVELOPMENT CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001461708</cik>
+          <name>Green Star Products, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001461708</id>
+      <title>Green Star Products, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001094976</cik>
+          <name>HEAD HOLDING UNTERNEHMENSBETEILIGUNG GMBH</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001094976</id>
+      <title>HEAD HOLDING UNTERNEHMENSBETEILIGUNG GMBH</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001123455</cik>
+          <name>HEAD NV</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001123455</id>
+      <title>HEAD NV</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000876889</cik>
+          <name>HEALTHTECH INTERNATIONAL INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000876889</id>
+      <title>HEALTHTECH INTERNATIONAL INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000880036</cik>
+          <name>HOCKEY CO</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000880036</id>
+      <title>HOCKEY CO</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000225463</cik>
+          <name>HUFFY CORP</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000225463</id>
+      <title>HUFFY CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001029294</cik>
+          <name>ICON FITNESS CORP</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001029294</id>
+      <title>ICON FITNESS CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000934798</cik>
+          <name>ICON HEALTH &amp; FITNESS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000934798</id>
+      <title>ICON HEALTH &amp; FITNESS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001850741</cik>
+          <name>iFit Health &amp; Fitness Inc</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001850741</id>
+      <title>iFit Health &amp; Fitness Inc</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000934799</cik>
+          <name>IHF HOLDINGS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000934799</id>
+      <title>IHF HOLDINGS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001875016</cik>
+          <name>J-Star Holding Co., Ltd.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001875016</id>
+      <title>J-Star Holding Co., Ltd.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001675442</cik>
+          <name>JAKROO INC.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001675442</id>
+      <title>JAKROO INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000788329</cik>
+          <name>JOHNSON OUTDOORS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000788329</id>
+      <title>JOHNSON OUTDOORS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001101201</cik>
+          <name>JUMPKING INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001101201</id>
+      <title>JUMPKING INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000922251</cik>
+          <name>K2 LICENSING &amp; PROMOTIONS  INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000922251</id>
+      <title>K2 LICENSING &amp; PROMOTIONS  INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001131089</cik>
+          <name>LD HOLDINGS, INC.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001131089</id>
+      <title>LD HOLDINGS, INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001757158</cik>
+          <name>Life Fitness Holdings Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001757158</id>
+      <title>Life Fitness Holdings Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001086132</cik>
+          <name>MAURER RICHARD M</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001086132</id>
+      <title>MAURER RICHARD M</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001046472</cik>
+          <name>MCHENRY METALS GOLF CORP /CA</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001046472</id>
+      <title>MCHENRY METALS GOLF CORP /CA</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000925172</cik>
+          <name>MKR HOLDINGS</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000925172</id>
+      <title>MKR HOLDINGS</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001039387</cik>
+          <name>NATURAL GOLF CORP</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001039387</id>
+      <title>NATURAL GOLF CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001135302</cik>
+          <name>NEBO PRODUCTS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001135302</id>
+      <title>NEBO PRODUCTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001485029</cik>
+          <name>New Asia Holdings, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001485029</id>
+      <title>New Asia Holdings, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001934245</cik>
+          <name>Newton Golf Company, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001934245</id>
+      <title>Newton Golf Company, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001514242</cik>
+          <name>OLD PSG WIND-DOWN LTD.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001514242</id>
+      <title>OLD PSG WIND-DOWN LTD.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001610718</cik>
+          <name>Outdoor Specialty Products, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001610718</id>
+      <title>Outdoor Specialty Products, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000006720</cik>
+          <name>OUTDOOR SPORTS GEAR, INC.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000006720</id>
+      <title>OUTDOOR SPORTS GEAR, INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001627554</cik>
+          <name>Pedro&apos;s List, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001627554</id>
+      <title>Pedro&apos;s List, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001639825</cik>
+          <name>PELOTON INTERACTIVE, INC.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001639825</id>
+      <title>PELOTON INTERACTIVE, INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001509969</cik>
+          <name>PERFORMANCE SPORTS BRANDS, INC.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001509969</id>
+      <title>PERFORMANCE SPORTS BRANDS, INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000888916</cik>
+          <name>PLAYCORE INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000888916</id>
+      <title>PLAYCORE INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001040761</cik>
+          <name>POKER TV NETWORK INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001040761</id>
+      <title>POKER TV NETWORK INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001158699</cik>
+          <name>PRO POINTER INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001158699</id>
+      <title>PRO POINTER INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000885239</cik>
+          <name>PTI HOLDING INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000885239</id>
+      <title>PTI HOLDING INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000921915</cik>
+          <name>RAWLINGS SPORTING GOODS CO INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000921915</id>
+      <title>RAWLINGS SPORTING GOODS CO INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001428473</cik>
+          <name>Real Sports Investments LLC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001428473</id>
+      <title>Real Sports Investments LLC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000912592</cik>
+          <name>RENAISSANCE GOLF PRODUCTS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000912592</id>
+      <title>RENAISSANCE GOLF PRODUCTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001943705</cik>
+          <name>Revelyst, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001943705</id>
+      <title>Revelyst, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000917734</cik>
+          <name>RIDE INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000917734</id>
+      <title>RIDE INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000925610</cik>
+          <name>ROLLERBALL INTERNATIONAL INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000925610</id>
+      <title>ROLLERBALL INTERNATIONAL INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001086134</cik>
+          <name>ROSS ROBERT L</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001086134</id>
+      <title>ROSS ROBERT L</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001016395</cik>
+          <name>ROYAL PRECISION INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001016395</id>
+      <title>ROYAL PRECISION INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001295496</cik>
+          <name>Sandpointe Group,Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001295496</id>
+      <title>Sandpointe Group,Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001682391</cik>
+          <name>Sensory Performance Technology, Inc</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001682391</id>
+      <title>Sensory Performance Technology, Inc</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000938605</cik>
+          <name>SNAKE EYES GOLF CLUBS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000938605</id>
+      <title>SNAKE EYES GOLF CLUBS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001870600</cik>
+          <name>Solo Brands, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001870600</id>
+      <title>Solo Brands, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001164299</cik>
+          <name>SPORT SHOW PROMOTIONS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001164299</id>
+      <title>SPORT SHOW PROMOTIONS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001966995</cik>
+          <name>Sportcor Technologies Ltd</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001966995</id>
+      <title>Sportcor Technologies Ltd</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001009193</cik>
+          <name>SPORTSTRAC INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001009193</id>
+      <title>SPORTSTRAC INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001089743</cik>
+          <name>SPORTSTRAC SYSTEMS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001089743</id>
+      <title>SPORTSTRAC SYSTEMS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000923291</cik>
+          <name>SURE SHOT INTERNATIONAL INC /FL/</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000923291</id>
+      <title>SURE SHOT INTERNATIONAL INC /FL/</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001025566</cik>
+          <name>TEARDROP GOLF CO</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001025566</id>
+      <title>TEARDROP GOLF CO</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001078547</cik>
+          <name>TRUE TEMPER SPORTS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001078547</id>
+      <title>TRUE TEMPER SPORTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001857086</cik>
+          <name>TruGolf Holdings, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001857086</id>
+      <title>TruGolf Holdings, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001435963</cik>
+          <name>TW Sports, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001435963</id>
+      <title>TW Sports, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001540237</cik>
+          <name>Ultimate Rack, Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001540237</id>
+      <title>Ultimate Rack, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001051017</cik>
+          <name>UNITED GOLF PRODUCTS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001051017</id>
+      <title>UNITED GOLF PRODUCTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001666114</cik>
+          <name>Unleashed Inc.</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001666114</id>
+      <title>Unleashed Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001122410</cik>
+          <name>V FORMATION INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001122410</id>
+      <title>V FORMATION INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001083277</cik>
+          <name>V FORMATION INC/NJ/</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001083277</id>
+      <title>V FORMATION INC/NJ/</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000921366</cik>
+          <name>VARIFLEX INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000921366</id>
+      <title>VARIFLEX INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000874786</cik>
+          <name>VARSITY BRANDS INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000874786</id>
+      <title>VARSITY BRANDS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000782126</cik>
+          <name>WOMENS GOLF UNLIMITED INC</name>
+          <sic>3949</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000782126</id>
+      <title>WOMENS GOLF UNLIMITED INC</title>
+    </entry>
+  </feed>

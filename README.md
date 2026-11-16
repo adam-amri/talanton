@@ -1,147 +1,217 @@
 # Talanton
 
-D'un ticker à un modèle de valorisation M&A / LBO dans Excel, avec de vraies formules.
+From a ticker to an M&A / LBO valuation model in Excel, with live formulas, and an interactive app to play with it.
 
-Talanton récupère les comptes publiés d'une société cotée, les met au format banque, projette ses trois états financiers, la valorise par DCF et par comparables, simule son rachat par un fonds (LBO), puis écrit le tout dans un classeur Excel où chaque chiffre est une formule : on change une hypothèse, tout se recalcule.
+Talanton fetches the published accounts of a listed company, puts them in bank format, projects its three financial statements, values it by DCF and trading comparables, simulates its buyout by a fund (LBO), then writes everything into an Excel workbook where every figure is a formula: change one assumption and the model recalculates.
 
-Le nom vient du grec τάλαντον : le talent, à la fois unité de poids et unité de monnaie. Valoriser, c'est peser.
+The name comes from the Greek τάλαντον: the talent, both a unit of weight and a unit of money. To value is to weigh.
 
-> Version 0.1, prototype. Projet pédagogique : rien de ce que produit Talanton n'est un conseil en investissement.
+> Version 0.2. Educational project: nothing Talanton produces is investment advice.
 
-## Ce que ça donne
+![Interactive app, overview](docs/app_overview.png)
 
-Exemple fourni : Mattel (MAT), comptes au 30 septembre 2026, cours du 9 novembre 2026.
+## What you get
+
+Example shipped with the repository: Mattel (MAT), accounts to 30 September 2026, share price of 9 November 2026.
 
 ```
-MATTEL INC /DE/ (MAT), cours 15.59 $, valeur d'entreprise 6,245 M$
-  DCF, croissance perpétuelle :  29.42 $ par action (WACC 6.61%)
-  DCF, multiple de sortie     :  26.31 $ par action
-  Comparables, VE/EBITDA médian :  18.60 $ par action
-  LBO à 30% de prime : TRI 15.2%, multiple de la mise 2.03x
-  Prix maximum d'un fonds visant 20% de TRI : 14.00 $ par action
+MATTEL INC /DE/ (MAT), share price $15.59, enterprise value $6,245m
+  DCF, perpetual growth : $ 23.61 per share (WACC 7.50%, beta 1.03)
+  DCF, exit multiple    : $ 25.06 per share
+  Comps, median EV/EBITDA: $ 18.60 per share
+  LBO at a 30% premium: IRR 15.6%, MOIC 2.07x
+  Maximum price for a fund targeting a 20% IRR: $14.56 per share
 
-Rapprochement : 898 formules recalculées sans erreur, Excel = Python sur 21 chiffres clés.
-Classeur : exemples/sorties/MAT_modele.xlsx
+  Scenario        DCF growth   DCF multiple   LBO IRR   Max price
+  base                23.61          25.06     15.6%       14.56
+  bull                28.00          29.29     21.1%       22.20
+  bear                19.57          21.15      9.7%        9.75
+  mezzanine           23.61          25.06     16.1%       15.87
+
+Reconciliation: 922 formulas recalculated without error, Excel = Python on 23 key figures.
 ```
 
-Ces valeurs découlent d'hypothèses par défaut, mécaniques. Elles servent de point de départ : le travail d'analyste commence dans l'onglet Hypothèses.
+These values follow from mechanical default assumptions. They are a starting point: the analyst's work begins on the Assumptions sheet.
 
-Le classeur produit (`exemples/sorties/MAT_modele.xlsx`) contient neuf onglets :
+The workbook (`examples/output/MAT_model.xlsx`) has nine sheets:
 
-| Onglet | Contenu |
+| Sheet | Content |
 |---|---|
-| Synthèse | Fourchettes de valeur par action (football field), résultat du LBO, état des contrôles |
-| Hypothèses | Toutes les cellules modifiables, en bleu sur fond jaune, avec la justification de chaque valeur proposée |
-| Historique | Cinq exercices retraités et les douze derniers mois, avec la balise SEC d'origine de chaque ligne |
-| Projections | Compte de résultat, flux et bilan sur six exercices |
-| DCF | Flux disponibles, deux valeurs terminales, passage à la valeur par action |
-| Comparables | Multiples des pairs, statistiques, valeur implicite de la cible |
-| LBO | Prix, financement, plan de remboursement, TRI, prix maximum pour un TRI visé |
-| Sensibilités | Quatre tables croisées, en formules |
-| Contrôles | Cohérence du modèle, points de jugement, rapprochement avec le moteur Python |
+| Summary | Value per share by method (football field), LBO outcome, checks, data sources |
+| Assumptions | Every editable cell, in blue on a coloured fill, with the reason for each proposed value |
+| Historical | Five restated fiscal years and the last twelve months, with the SEC tag behind each line |
+| Projections | Income statement, cash flows and balance sheet over six to ten fiscal years |
+| DCF | Free cash flows, two terminal values, bridge to value per share |
+| Comps | Peer multiples, statistics, sector reference, implied value of the target |
+| LBO | Price, sources and uses, two-tranche debt schedule, IRR, maximum price for a target IRR |
+| Sensitivities | Four cross tables, in formulas |
+| Checks | Consistency of the model, points of judgment, reconciliation with the Python engine |
 
-Conventions de couleur : bleu pour un chiffre saisi, noir pour une formule, vert pour un lien vers un autre onglet.
+Colour conventions: blue for a hard-coded figure, black for a formula, green for a link to another sheet.
 
 ## Installation
 
-Python 3.11 ou plus récent.
+Python 3.11 or later. On macOS or Linux:
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -e ".[marche,dev]"
+```zsh
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[market,app,dev]"
 ```
 
-LibreOffice (gratuit) est facultatif : s'il est installé, Talanton s'en sert pour recalculer le classeur et vérifier qu'Excel et Python trouvent les mêmes chiffres. Sans lui, Excel calcule tout à l'ouverture et l'onglet Contrôles fait la même vérification.
+On Windows (PowerShell): `py -m venv .venv`, then `.\.venv\Scripts\Activate.ps1`, then the same `pip` command.
 
-## Utilisation
+LibreOffice (free) is optional: when installed, Talanton uses it to recalculate the workbook and check that Excel and Python agree. Without it, Excel computes everything on opening and the Checks sheet does the same comparison.
 
-Rejouer l'exemple, sans réseau, à partir des données enregistrées dans le dépôt :
+## Usage
 
-```powershell
-.\.venv\Scripts\python.exe -m talanton run MAT --pairs HAS,FNKO,JAKK,YETI,GOLF `
-    --cache exemples\cache --hors-ligne --ajustements exemples\retraitements\MAT.toml
+Replay the example, with no network, from the data recorded in the repository:
+
+```zsh
+talanton run MAT --peers HAS,FNKO,JAKK,YETI,GOLF \
+    --cache examples/cache --offline \
+    --adjustments examples/adjustments/MAT.toml --config examples/configs/MAT.toml
 ```
 
-Sur une autre société, en ligne. La SEC demande de s'identifier (nom et e-mail) :
+Open the interactive app (the example is selected by default):
 
-```powershell
-$env:TALANTON_CONTACT = "Prénom Nom prenom.nom@exemple.com"
-.\.venv\Scripts\python.exe -m talanton run GIS --pairs CPB,CAG,SJM,KHC,HRL
+```zsh
+talanton app
 ```
 
-Options : `--ajustements fichier.toml` (retraitements d'analyste), `--hypotheses fichier.toml` (remplace des hypothèses par défaut), `--sortie dossier`, `--sans-recalcul`, `--hors-ligne`.
+On another company, online. The SEC asks callers to identify themselves (name and e-mail): copy `.env.example` to `.env` and fill in `TALANTON_CONTACT`.
 
-### Les deux fichiers de l'analyste
+```zsh
+talanton peers GIS                                  # suggest comparables from the SEC industry code
+talanton run GIS --peers CPB,CAG,SJM,KHC,HRL
+```
 
-Les décisions de jugement ne sont pas dans le code : elles vivent dans deux fichiers texte, versionnés avec le projet.
+Other commands:
 
-`retraitements/MAT.toml` corrige ou complète les comptes publiés, chaque ligne avec sa source :
+| Command | What it does |
+|---|---|
+| `talanton merger HAS MAT --stock 0.5 --synergies 150` | Accretion / dilution of an acquirer's earnings per share |
+| `talanton sources` | Lists the data sources and which API keys are set |
+| `talanton industries [--refresh]` | Sector betas and multiples (Damodaran); `--refresh` downloads the current tables |
+| `talanton run ... --scenario bull` | Builds the workbook of one scenario of the config |
+
+## The interactive app
+
+`talanton app` opens a page in the browser. Sliders in the sidebar feed the same engine as the command line, so every chart and figure updates at once.
+
+- **Overview**: football field against the share price, revenue and EBITDA.
+- **Financials, DCF, Comps, LBO**: tables, value bridge, sensitivity heatmaps, sources and uses, debt paydown.
+- **Scenarios**: base, bull, bear (or yours) side by side, plus your live changes.
+- **Monte Carlo**: a distribution of DCF values instead of a single figure.
+- **Merger**: accretion or dilution for an acquirer chosen among the comparables.
+- **Data and checks**: where each input comes from, API keys, warnings, the reason for every assumption.
+- **Export**: the Excel model with the assumptions you set, and your changes as a config file.
+
+![Interactive app, LBO tab](docs/app_lbo.png)
+
+## Data sources
+
+Two editions share one code base, through interchangeable providers.
+
+**Open edition** (free):
+
+| Source | Used for | Key |
+|---|---|---|
+| SEC EDGAR | Accounts, company profile, industry code, peer suggestions | None (identification only) |
+| FRED | Risk-free rate (10-year Treasury), SOFR, credit spreads, breakeven inflation | None (public CSV), or a free API key |
+| Damodaran (NYU Stern) | Sector betas and EV multiples; a January 2026 snapshot is bundled | None |
+| Yahoo Finance | Share prices, monthly history for the beta | None (`yfinance`) |
+| Alpha Vantage, Finnhub | Backup prices; Finnhub also suggests peers | Free key |
+
+Prices come from a chain of providers tried in order, and everything is cached locally. The Summary sheet and the app state which source served each input.
+
+**Terminal edition** (experimental): with `TALANTON_BLOOMBERG=1` on a computer running a logged-in Bloomberg Terminal, prices and history are asked from Bloomberg first (`pip install blpapi`). With `bloomberg_formulas = true` in the config, share prices in the workbook become live `BDP` formulas that fall back on the recorded value without a Terminal. Bloomberg data is licensed: never commit it (the cache folder is git-ignored), and check your institution's rules on automated use.
+
+API keys live in a `.env` file that is never committed (see `.env.example`).
+
+## Customising a run
+
+Judgment is not in the code. It lives in two text files, versioned with your work.
+
+`adjustments/MAT.toml` corrects or completes published accounts, each line with its source:
 
 ```toml
-[capex]
-source = "10-K Mattel, tableau de flux (deux lignes d'investissement)"
-"2025-12-31" = 181.992
-
 [ebitda]
-source = "Communiqué du T3 2026 : 88 M$ de remboursements de droits de douane"
+source = "Q3 2026 earnings release: $88m of tariff refunds"
 "LTM" = -88.0
 ```
 
-Un fichier d'hypothèses remplace les valeurs par défaut (un nombre, ou une liste de six valeurs pour une hypothèse annuelle) :
+A config file customises the model:
 
 ```toml
-marge_ebitda = [0.115, 0.12, 0.125, 0.13, 0.13, 0.13]
-prime_acquisition = 0.35
-levier = 4.5
+acquisition_premium = 0.35                       # assumption overrides: a number,
+ebitda_margin = [0.115, 0.12, 0.125, 0.13, 0.13, 0.13]   # or one value per projected year
+
+[settings]
+years = 8                  # 6 to 10 projected years; the LBO holding period is years - 1
+beta_method = "sector"     # auto | regression | sector
+industry = "Recreation"    # Damodaran industry, when the SEC code maps to none
+include_leases = true      # add operating lease liabilities to net debt
+theme = "midnight"         # classic | midnight | forest | slate
+bloomberg_formulas = false
+
+[theme]                    # any colour of the theme, in hex
+ink = "0B3D2E"
+
+[scenarios.bull]           # absolute values, or moves relative to the base case
+revenue_growth = { shift = 0.01 }
+senior_leverage = { scale = 1.1 }
 ```
 
-## Comment c'est construit
+## How it is built
 
 ```
 talanton/
-├── collecte/        comptes (SEC EDGAR) et marché (Yahoo Finance), avec cache local
-├── retraitement/    faits bruts -> états au format banque, LTM, ajustements d'analyste
-├── modele/          hypothèses par défaut et projection des trois états
-├── valorisation/    DCF, comparables, LBO, sensibilités
-├── excel/           écriture du classeur et de ses formules
-├── controles/       vérifications et rapprochement Python / Excel
-├── moteur.py        assemblage, en Python pur
-└── cli.py           ligne de commande
-tests/               46 tests, sans réseau
-exemples/            données enregistrées, ajustements Mattel, classeur produit
+├── data/           SEC EDGAR, FRED, Damodaran, price providers, Bloomberg, peer suggestions
+├── restatement/    raw facts -> bank-format statements, LTM, analyst adjustments
+├── model/          default assumptions, settings, config and scenarios, projection
+├── valuation/      DCF, comparables, LBO, sensitivities, Monte Carlo, merger
+├── excel/          workbook, formulas and themes
+├── checks/         verifications and Python / Excel reconciliation
+├── app/            interactive interface (Streamlit + Plotly)
+├── engine.py       assembly, in pure Python
+└── cli.py          command line
+tests/              76 tests, no network
+examples/           recorded data, Mattel adjustments and config, workbook produced
 ```
 
-Le principe de fiabilité : le modèle existe deux fois. Le moteur Python calcule chaque chiffre sans Excel ; le classeur les recalcule avec ses formules. Les tests exigent que les deux coïncident à 0,0001 % près, y compris après avoir modifié une vingtaine d'hypothèses.
+The reliability principle: the model exists twice. The Python engine computes every figure without Excel; the workbook recomputes them with its formulas. The tests require both to agree to 0.0001%, including after changing about thirty assumptions, with eight projected years, and with options in the money.
 
-```powershell
-.\.venv\Scripts\python.exe -m pytest
+```zsh
+pytest
 ```
 
-## Méthodes, en bref
+## Methods, in short
 
-- **Douze derniers mois (LTM)** : dernier exercice + cumul de l'exercice en cours - même cumul un an plus tôt.
-- **EBITDA ajusté** : résultat opérationnel + amortissements + dépréciations d'actifs + ajustements d'analyste.
-- **Projections** : la première année part du rythme et de la marge des douze derniers mois, puis converge vers 2 % de croissance et vers la marge moyenne de trois exercices.
-- **DCF** : flux disponibles actualisés au WACC (MEDAF, bêta ajusté de Blume), convention de milieu d'année, première année proratisée, valeur terminale par croissance perpétuelle et par multiple de sortie.
-- **Comparables** : VE/CA, VE/EBITDA, VE/EBIT, PER sur douze mois glissants ; les multiples négatifs ou supérieurs à 40x sont écartés.
-- **LBO** : rachat avec prime à la fin de l'exercice en cours, une tranche de dette, remboursement par la trésorerie excédentaire, revente cinq ans plus tard au multiple d'entrée. Le prix maximum pour un TRI visé est calculé par une formule exacte.
+- **Last twelve months (LTM)**: last fiscal year + current year to date - same period one year earlier.
+- **Adjusted EBITDA**: operating income + D&A + asset impairments + analyst adjustments.
+- **Projections**: year one starts from the pace and margin of the last twelve months, then converges to 2% growth and the three-year average margin.
+- **Cost of capital**: CAPM. Risk-free rate from FRED. Beta from a regression with Blume's adjustment, or, when its R² is below 0.15, the sector's unlevered beta re-levered at the company's own debt/equity.
+- **DCF**: free cash flows discounted at the WACC, mid-year convention, first year prorated, terminal value by perpetual growth and by exit multiple.
+- **Comparables**: EV/Revenue, EV/EBITDA, EV/EBIT, P/E on LTM figures; negative multiples and those above 40x are excluded.
+- **Dilution**: treasury stock method for options, at the share price for the DCF and at the offer price in the LBO.
+- **LBO**: buyout at a premium at the end of the current fiscal year; a senior tranche (SOFR + single-B spread by default) repaid by amortisation and cash sweep, an optional subordinated tranche with cash and PIK interest; sale at the end of the plan at the entry multiple. The maximum price for a target IRR comes from an exact formula.
+- **Monte Carlo**: independent normal shocks on growth, margin, WACC and perpetual growth; the standard deviations are your inputs.
+- **Merger**: pro forma EPS on LTM earnings, with stock and debt financing and pre-tax synergies.
 
-## Limites connues de la version 0.1
+## Known limits of version 0.2
 
-- Sociétés déposant leurs comptes à la SEC en US GAAP uniquement (pas encore les sociétés européennes).
-- Banques, assureurs et foncières non couverts.
-- Les comparables sont choisis par l'utilisateur ; pas de transactions comparables.
-- Une seule tranche de dette dans le LBO, frais passés en charge, pas de management package.
-- Dilution non calculée (champ à renseigner), dettes de location laissées hors dette nette.
-- Les exercices sont étiquetés par l'année de leur date de clôture.
-- Le téléchargement en ligne (SEC, Yahoo Finance) est testé avec un réseau simulé ; l'exemple fourni tourne sur des données réelles enregistrées le 10 novembre 2026.
+- Companies filing with the SEC under US GAAP only (no European companies yet). Banks, insurers and real-estate companies are not covered.
+- Peer suggestions come from coarse SEC industry codes and include micro-caps; there are no precedent transactions.
+- The merger model has no purchase price allocation, and exists in the app and the command line, not in the workbook.
+- LBO fees are expensed, there is no management package, and options are valued at one average strike.
+- Not verified from this development environment, which has no direct internet access:
+  - the online download code runs only against a simulated network in the tests; the example data was read from the same sources (SEC, FRED, Yahoo, Damodaran) through a browser;
+  - the Alpha Vantage, Finnhub and Bloomberg providers were written from their documentation and never run against the real services;
+  - the workbook was recalculated and read back with LibreOffice, not with Microsoft Excel.
 
-## Sources de données
+## Credits and disclaimer
 
-- Comptes : SEC EDGAR, API `companyfacts` ([exemple pour Mattel](https://data.sec.gov/api/xbrl/companyfacts/CIK0000063276.json)). Gratuite, sans clé, 10 requêtes par seconde au plus, identification obligatoire.
-- Cours, bêta, taux à 10 ans : Yahoo Finance via `yfinance`, pour un usage personnel.
-- Prime de risque du marché : [A. Damodaran, NYU Stern](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm), valeur du 1er novembre 2026 inscrite dans `talanton/modele/hypotheses.py`, à mettre à jour.
+Sector data: Aswath Damodaran, NYU Stern (https://pages.stern.nyu.edu/~adamodar/). Rates: Federal Reserve Bank of St. Louis (FRED). Accounts: US Securities and Exchange Commission (EDGAR). Free market data is meant for personal use and carries no quality guarantee.
 
-## English summary
-
-Talanton turns a US-listed ticker into a full M&A / LBO valuation model in Excel with live formulas: restated financials from SEC EDGAR, a three-statement projection, DCF, trading comparables, an LBO with debt schedule and sponsor returns, sensitivity tables and a football field. A pure-Python engine computes every figure independently and the test suite checks that Excel and Python agree. Code, labels and documentation are in French.
+Educational project. Nothing produced by Talanton is investment advice, a forecast or a recommendation.

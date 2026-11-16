@@ -1,0 +1,14 @@
+{
+ "cik": "0001670592",
+ "entityType": "operating",
+ "sic": "3949",
+ "sicDescription": "Sporting & Athletic Goods, NEC",
+ "name": "YETI Holdings, Inc.",
+ "tickers": [
+  "YETI"
+ ],
+ "exchanges": [
+  "NYSE"
+ ],
+ "fiscalYearEnd": "0102"
+}

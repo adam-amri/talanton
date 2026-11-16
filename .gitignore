@@ -6,10 +6,15 @@ __pycache__/
 build/
 dist/
 
-# données téléchargées et classeurs produits en local
-donnees_cache/
-sorties/
+# API keys: never commit them
+.env
 
-# fichiers temporaires d'Excel et de LibreOffice
+# downloaded data and workbooks produced locally
+# (the cache may hold licensed data, for example from Bloomberg)
+data_cache/
+output/
+
+# temporary files of Excel, LibreOffice and macOS
 ~$*.xlsx
 .~lock.*
+.DS_Store

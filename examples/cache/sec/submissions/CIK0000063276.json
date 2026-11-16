@@ -1,0 +1,14 @@
+{
+ "cik": "0000063276",
+ "entityType": "operating",
+ "sic": "3942",
+ "sicDescription": "Dolls & Stuffed Toys",
+ "name": "MATTEL INC /DE/",
+ "tickers": [
+  "MAT"
+ ],
+ "exchanges": [
+  "Nasdaq"
+ ],
+ "fiscalYearEnd": "1231"
+}

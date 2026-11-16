@@ -1,12 +1,13 @@
-"""Talanton : d'un ticker à un modèle de valorisation M&A / LBO dans Excel.
+"""Talanton: from a ticker to an M&A / LBO valuation model in Excel.
 
-Chaîne de traitement :
-    collecte      -> comptes publiés (SEC EDGAR) et cours de bourse
-    retraitement  -> états financiers au format banque, LTM, ajustements
-    modele        -> hypothèses par défaut et projections des trois états
-    valorisation  -> DCF, comparables boursiers, LBO
-    excel         -> classeur avec formules vivantes
-    controles     -> vérifications et rapprochement Python / Excel
+Pipeline:
+    data         -> published accounts (SEC EDGAR), prices, rates, sector references
+    restatement  -> bank-format financial statements, LTM, analyst adjustments
+    model        -> default assumptions, scenarios, three-statement projection
+    valuation    -> DCF, trading comparables, LBO, sensitivities, Monte Carlo, merger
+    excel        -> workbook with live formulas
+    checks       -> consistency checks and Python / Excel reconciliation
+    app          -> interactive interface (Streamlit)
 """
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"

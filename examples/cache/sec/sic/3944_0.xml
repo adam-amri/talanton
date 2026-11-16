@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <!-- Extract of the EDGAR company list for this SIC code (2026-11-16), reduced to the fields Talanton reads. -->
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001010077</cik>
+          <name>4D SEISMIC INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001010077</id>
+      <title>4D SEISMIC INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001138016</cik>
+          <name>ANAGRAM PLUS INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001138016</id>
+      <title>ANAGRAM PLUS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001097896</cik>
+          <name>Big Tree Group, Inc.</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001097896</id>
+      <title>Big Tree Group, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000355142</cik>
+          <name>BK ENTERTAINMENT INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000355142</id>
+      <title>BK ENTERTAINMENT INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001392369</cik>
+          <name>Brainytoys, LTD</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001392369</id>
+      <title>Brainytoys, LTD</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001028637</cik>
+          <name>CORGI INTERNATIONAL LTD</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001028637</id>
+      <title>CORGI INTERNATIONAL LTD</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000913160</cik>
+          <name>CREATIVE PROGRAMMING &amp; TECHNOLOGY VENTURES INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000913160</id>
+      <title>CREATIVE PROGRAMMING &amp; TECHNOLOGY VENTURES INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000840815</cik>
+          <name>DIRECT CONNECT INTERNATIONAL INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000840815</id>
+      <title>DIRECT CONNECT INTERNATIONAL INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000919570</cik>
+          <name>EDUCATIONAL INSIGHTS INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000919570</id>
+      <title>EDUCATIONAL INSIGHTS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001501862</cik>
+          <name>Empire Global Gaming, Inc.</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001501862</id>
+      <title>Empire Global Gaming, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000312840</cik>
+          <name>EMPIRE OF CAROLINA INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000312840</id>
+      <title>EMPIRE OF CAROLINA INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000089261</cik>
+          <name>EXX INC/NV/</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000089261</id>
+      <title>EXX INC/NV/</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001024201</cik>
+          <name>FUNDEX GAMES LTD</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001024201</id>
+      <title>FUNDEX GAMES LTD</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001704711</cik>
+          <name>Funko, Inc.</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001704711</id>
+      <title>Funko, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001071800</cik>
+          <name>FUTECH INTERACTIVE PRODUCTS DELAWARE INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001071800</id>
+      <title>FUTECH INTERACTIVE PRODUCTS DELAWARE INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000751968</cik>
+          <name>GALOOB TOYS INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000751968</id>
+      <title>GALOOB TOYS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000918580</cik>
+          <name>Gaming Partners International CORP</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000918580</id>
+      <title>Gaming Partners International CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000916714</cik>
+          <name>GOOD IDEAS ENTERPRISES INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000916714</id>
+      <title>GOOD IDEAS ENTERPRISES INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000923662</cik>
+          <name>HAPPINESS EXPRESS INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000923662</id>
+      <title>HAPPINESS EXPRESS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000046080</cik>
+          <name>HASBRO, INC.</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000046080</id>
+      <title>HASBRO, INC.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000916371</cik>
+          <name>HASSENFELD ALAN G</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000916371</id>
+      <title>HASSENFELD ALAN G</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001041085</cik>
+          <name>HEDSTROM CORP</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001041085</id>
+      <title>HEDSTROM CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001042422</cik>
+          <name>HEDSTROM HOLDINGS INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001042422</id>
+      <title>HEDSTROM HOLDINGS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001009829</cik>
+          <name>JAKKS PACIFIC INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001009829</id>
+      <title>JAKKS PACIFIC INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000800454</cik>
+          <name>JANEX INTERNATIONAL INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000800454</id>
+      <title>JANEX INTERNATIONAL INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000053540</cik>
+          <name>JILCO INDUSTRIES INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000053540</id>
+      <title>JILCO INDUSTRIES INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000890639</cik>
+          <name>JUST TOYS INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000890639</id>
+      <title>JUST TOYS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0002049187</cik>
+          <name>K-TECH SOLUTIONS CO LTD</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0002049187</id>
+      <title>K-TECH SOLUTIONS CO LTD</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001103993</cik>
+          <name>LAS VEGAS GAMING INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001103993</id>
+      <title>LAS VEGAS GAMING INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001001879</cik>
+          <name>LASER STORM INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001001879</id>
+      <title>LASER STORM INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001138951</cik>
+          <name>LEAPFROG ENTERPRISES INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001138951</id>
+      <title>LEAPFROG ENTERPRISES INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001088162</cik>
+          <name>MAD CATZ INTERACTIVE INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001088162</id>
+      <title>MAD CATZ INTERACTIVE INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001406568</cik>
+          <name>MAJIC WHEELS CORP</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001406568</id>
+      <title>MAJIC WHEELS CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001100779</cik>
+          <name>Millennium Prime, Inc.</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001100779</id>
+      <title>Millennium Prime, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000888981</cik>
+          <name>NOCOPI TECHNOLOGIES INC/MD/</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000888981</id>
+      <title>NOCOPI TECHNOLOGIES INC/MD/</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000073942</cik>
+          <name>OHIO ART CO</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000073942</id>
+      <title>OHIO ART CO</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001127882</cik>
+          <name>OPTIMA GLOBAL CORP</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001127882</id>
+      <title>OPTIMA GLOBAL CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000919642</cik>
+          <name>RADICA GAMES LTD</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000919642</id>
+      <title>RADICA GAMES LTD</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001069559</cik>
+          <name>SALESREPCENTRAL COM INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001069559</id>
+      <title>SALESREPCENTRAL COM INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001109590</cik>
+          <name>SILK ROAD ENTERTAINMENT INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001109590</id>
+      <title>SILK ROAD ENTERTAINMENT INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001119809</cik>
+          <name>Sino-Bon Entertainment, Inc.</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001119809</id>
+      <title>Sino-Bon Entertainment, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001157564</cik>
+          <name>SMALL WORLD KIDS INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001157564</id>
+      <title>SMALL WORLD KIDS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001520108</cik>
+          <name>Spiral Toys Inc.</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001520108</id>
+      <title>Spiral Toys Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000853017</cik>
+          <name>SUBSTANCE ABUSE TECHNOLOGIES INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000853017</id>
+      <title>SUBSTANCE ABUSE TECHNOLOGIES INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000725316</cik>
+          <name>TAYLOR MADE GOLF CO INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000725316</id>
+      <title>TAYLOR MADE GOLF CO INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001071179</cik>
+          <name>TSUNAMI MEDIA CORP</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001071179</id>
+      <title>TSUNAMI MEDIA CORP</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000786130</cik>
+          <name>TYCO TOYS INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000786130</id>
+      <title>TYCO TOYS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000100536</cik>
+          <name>UDS INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000100536</id>
+      <title>UDS INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001020367</cik>
+          <name>UPSIDE DEVELOPMENT INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001020367</id>
+      <title>UPSIDE DEVELOPMENT INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000931198</cik>
+          <name>VICTORMAXX TECHNOLOGIES INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000931198</id>
+      <title>VICTORMAXX TECHNOLOGIES INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001717556</cik>
+          <name>Vinco Ventures, Inc.</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001717556</id>
+      <title>Vinco Ventures, Inc.</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0001156271</cik>
+          <name>WILD HEART RANCH INC</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0001156271</id>
+      <title>WILD HEART RANCH INC</title>
+    </entry>
+    <entry>
+      <content type="text/xml">
+        <company-info>
+          <cik>0000943747</cik>
+          <name>YES ENTERTAINMENT CORP</name>
+          <sic>3944</sic>
+        </company-info>
+      </content>
+      <id>urn:tag:www.sec.gov:cik=0000943747</id>
+      <title>YES ENTERTAINMENT CORP</title>
+    </entry>
+  </feed>

@@ -1,0 +1,117 @@
+{
+ "0": {
+  "cik_str": 63276,
+  "ticker": "MAT",
+  "title": "MATTEL INC /DE/"
+ },
+ "1": {
+  "cik_str": 46080,
+  "ticker": "HAS",
+  "title": "HASBRO, INC."
+ },
+ "2": {
+  "cik_str": 1704711,
+  "ticker": "FNKO",
+  "title": "Funko, Inc."
+ },
+ "3": {
+  "cik_str": 1009829,
+  "ticker": "JAKK",
+  "title": "JAKKS PACIFIC INC"
+ },
+ "4": {
+  "cik_str": 1670592,
+  "ticker": "YETI",
+  "title": "YETI Holdings, Inc."
+ },
+ "5": {
+  "cik_str": 1672013,
+  "ticker": "GOLF",
+  "title": "Acushnet Holdings Corp."
+ },
+ "6": {
+  "cik_str": 837465,
+  "ticker": "CALY",
+  "title": "Callaway Golf Co"
+ },
+ "7": {
+  "cik_str": 1639825,
+  "ticker": "PTON",
+  "title": "PELOTON INTERACTIVE, INC."
+ },
+ "8": {
+  "cik_str": 788329,
+  "ticker": "JOUT",
+  "title": "JOHNSON OUTDOORS INC"
+ },
+ "9": {
+  "cik_str": 33488,
+  "ticker": "ESCA",
+  "title": "ESCALADE INC"
+ },
+ "10": {
+  "cik_str": 1808997,
+  "ticker": "AOUT",
+  "title": "American Outdoor Brands, Inc."
+ },
+ "11": {
+  "cik_str": 913277,
+  "ticker": "CLAR",
+  "title": "Clarus Corp"
+ },
+ "12": {
+  "cik_str": 2014254,
+  "ticker": "KBSX",
+  "title": "FST Corp."
+ },
+ "13": {
+  "cik_str": 2049187,
+  "ticker": "KMRK",
+  "title": "K-TECH SOLUTIONS CO LTD"
+ },
+ "14": {
+  "cik_str": 888981,
+  "ticker": "NNUP",
+  "title": "NOCOPI TECHNOLOGIES INC/MD/"
+ },
+ "15": {
+  "cik_str": 1934245,
+  "ticker": "NWTG",
+  "title": "Newton Golf Company, Inc."
+ },
+ "16": {
+  "cik_str": 1870600,
+  "ticker": "SBDS",
+  "title": "Solo Brands, Inc."
+ },
+ "17": {
+  "cik_str": 1875016,
+  "ticker": "YMAT",
+  "title": "J-Star Holding Co., Ltd."
+ },
+ "18": {
+  "cik_str": 1857086,
+  "ticker": "TRUG",
+  "title": "TruGolf Holdings, Inc."
+ },
+ "19": {
+  "cik_str": 1928581,
+  "ticker": "GMEX",
+  "title": "GMEX Robotics Corp"
+ },
+ "20": {
+  "cik_str": 1610718,
+  "ticker": "ODRS",
+  "title": "Outdoor Specialty Products, Inc."
+ },
+ "21": {
+  "cik_str": 1166708,
+  "ticker": "BWMG",
+  "title": "Brownie's Marine Group, Inc"
+ },
+ "22": {
+  "cik_str": 2014254,
+  "ticker": "FSTWF",
+  "title": "FST Corp."
+ }
+}

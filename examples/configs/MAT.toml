@@ -1,0 +1,27 @@
+# Example config for Mattel: settings, theme and scenarios.
+# Run:  talanton run MAT --peers HAS,FNKO,JAKK,YETI,GOLF --config examples/configs/MAT.toml --scenario bull
+
+# 1. Assumption overrides (none here: the base case keeps Talanton's defaults).
+#    Examples:  acquisition_premium = 0.35
+#               ebitda_margin = [0.115, 0.12, 0.125, 0.13, 0.13, 0.13]
+
+[settings]
+years = 6                 # projected fiscal years (6 to 10); the LBO holding period is years - 1
+beta_method = "auto"      # auto | regression | sector
+theme = "classic"         # classic | midnight | forest | slate
+
+# 2. Scenarios, applied on top of the base case.
+[scenarios.bull]
+revenue_growth = { shift = 0.01 }       # one point more growth every year
+ebitda_margin = { shift = 0.01 }        # one point more margin every year
+exit_multiple_delta = 0.5
+
+[scenarios.bear]
+revenue_growth = { shift = -0.01 }
+ebitda_margin = { shift = -0.01 }
+exit_multiple_delta = -0.5
+
+[scenarios.mezzanine]                   # same business, more aggressive financing
+senior_leverage = 4.5
+sub_leverage = 1.5
+sub_pik_rate = 0.04
