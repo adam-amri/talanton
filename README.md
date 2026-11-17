@@ -1,5 +1,5 @@
 # Talanton
-dazqdsadzads
+dazqdsadzadszdadzqs
 dazazqzdaqzsdezaq
 From a ticker to an M&A / LBO valuation model in Excel, with live formulas, and an interactive app to play with it.
 
