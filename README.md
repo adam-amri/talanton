@@ -1,5 +1,5 @@
 # Talanton
-fazdazdazs
+
 From a ticker to an M&A / LBO valuation model in Excel, with live formulas, and an interactive app to play with it.
 
 Talanton fetches the published accounts of a listed company, puts them in bank format, projects its three financial statements, values it by DCF and trading comparables, simulates its buyout by a fund (LBO), then writes everything into an Excel workbook where every figure is a formula: change one assumption and the model recalculates.
